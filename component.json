@@ -1,0 +1,9 @@
+{
+	"name": "shadowing-dict",
+	"repo": "jkroso/shadowing-dict",
+	"description": "A dictionary data structure which keeps properties up in the parent they were created. Just like a JS execution context.",
+	"keywords": ["execution context", "dictionary", "hash", "object"],
+	"dependencies": {},
+	"scripts": ["index.js"],
+	"license": "MIT"
+}

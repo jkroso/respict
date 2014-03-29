@@ -1,0 +1,21 @@
+{
+  "name": "shadowing-dict",
+  "version": "0.1.0",
+  "description": "A dictionary data structure which keeps properties up in the parent they were created. Just like a JS execution context.",
+  "keywords": ["execution context", "dictionary", "hash", "object"],
+  "dependencies": {},
+  "devDependencies": {
+    "assert": "jkroso/assert",
+    "serve": "jkroso/serve",
+    "hydro-html": "*",
+    "hydro-bdd": "*",
+    "hydro-dot": "*",
+    "hydro": "*",
+    "jsmd": "*"
+  },
+  "repository": "git://github.com/jkroso/shadowing-dict.git",
+  "bugs": "https://github.com/jkroso/shadowing-dict/issues",
+  "author": "Jake Rosoman",
+  "files": ["index.js"],
+  "license": "MIT"
+}
