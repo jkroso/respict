@@ -37,3 +37,7 @@ Dict.prototype.owner = function(key){
   }
   return dict
 }
+
+Dict.prototype.create = function(key, val){
+  return this.data[key] = val
+}

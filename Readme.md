@@ -58,3 +58,15 @@ child.has('b') // => true
 child.has('c') // => true
 child.has('d') // => false
 ```
+
+### Dict#create(key)
+
+create `key` on `this` dictionary even if it already exists on a parent.
+
+```js
+child.data // => {b:2, c:4}
+child.create('a', 1)
+child.data // => {a:1, b:2, c:4}
+child.get('a') // => 1
+parent.get('a') // => 3
+```
