@@ -7,7 +7,7 @@
 
 module.exports = function(hydro) {
   hydro.set({
-    suite: 'dict',
+    suite: 'respict',
     timeout: 500,
     plugins: [
       require('hydro-bdd')

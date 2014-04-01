@@ -1,9 +1,9 @@
 
-var Dict = require('..')
+var Respict = require('..')
 
-describe('Dict#get', function(){
-  var a = new Dict({a: 1})
-  var b = new Dict({}, a)
+describe('.get()', function(){
+  var a = new Respict({a: 1})
+  var b = new Respict({}, a)
 
   it('return local properties', function(){
     assert(a.get('a') == 1)
@@ -14,8 +14,8 @@ describe('Dict#get', function(){
   })
 })
 
-describe('Dict#set', function(){
-  var a = new Dict({a: 1})
+describe('.set()', function(){
+  var a = new Respict({a: 1})
 
   it('set new properties', function(){
     a.set('prop', 1)
@@ -29,9 +29,9 @@ describe('Dict#set', function(){
   })
 })
 
-describe('Dict#has', function(){
-  var a = new Dict({a: 1})
-  var b = new Dict({}, a)
+describe('.has()', function(){
+  var a = new Respict({a: 1})
+  var b = new Respict({}, a)
 
   it('own properties', function(){
     assert(a.has('a'))

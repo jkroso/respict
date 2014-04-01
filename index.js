@@ -1,12 +1,12 @@
 
-module.exports = Dict
+module.exports = Respict
 
-function Dict(data, parent){
+function Respict(data, parent){
   this.parent = parent || null
   this.data = data || {}
 }
 
-Dict.prototype.get = function(key, fallback){
+Respict.prototype.get = function(key, fallback){
   var dict = this
   while (!(key in dict.data)) {
     if (!dict.parent) return fallback
@@ -15,7 +15,7 @@ Dict.prototype.get = function(key, fallback){
   return dict.data[key]
 }
 
-Dict.prototype.has = function(key){
+Respict.prototype.has = function(key){
   var dict = this
   while (!(key in dict.data)) {
     if (!dict.parent) return false
@@ -24,12 +24,12 @@ Dict.prototype.has = function(key){
   return true
 }
 
-Dict.prototype.set = function(key, val){
+Respict.prototype.set = function(key, val){
   var dict = this.owner(key) || this
   return dict.data[key] = val
 }
 
-Dict.prototype.owner = function(key){
+Respict.prototype.owner = function(key){
   var dict = this
   while (!(key in dict.data)) {
     if (!dict.parent) return null
@@ -38,6 +38,6 @@ Dict.prototype.owner = function(key){
   return dict
 }
 
-Dict.prototype.create = function(key, val){
+Respict.prototype.create = function(key, val){
   return this.data[key] = val
 }

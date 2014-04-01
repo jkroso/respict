@@ -1,7 +1,7 @@
 {
-  "name": "shadowing-dict",
+  "name": "respict",
   "version": "0.1.0",
-  "description": "A dictionary data structure which keeps properties up in the parent they were created. Just like a JS execution context.",
+  "description": "A dictionary which respects its inheritance chain",
   "keywords": ["execution context", "dictionary", "hash", "object"],
   "dependencies": {},
   "devDependencies": {
@@ -13,8 +13,8 @@
     "hydro": "*",
     "jsmd": "*"
   },
-  "repository": "git://github.com/jkroso/shadowing-dict.git",
-  "bugs": "https://github.com/jkroso/shadowing-dict/issues",
+  "repository": "git://github.com/jkroso/respict.git",
+  "bugs": "https://github.com/jkroso/respict/issues",
   "author": "Jake Rosoman",
   "files": ["index.js"],
   "license": "MIT"
