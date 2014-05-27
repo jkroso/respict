@@ -38,6 +38,10 @@ Respict.prototype.owner = function(key){
   return dict
 }
 
-Respict.prototype.create = function(key, val){
-  return this.data[key] = val
+Respict.prototype.create = function(key){
+  return this.data[key] = null
+}
+
+Respict.prototype.inspect = function(){
+  return JSON.stringify(this.data, null, 2)
 }
